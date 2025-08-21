@@ -1,7 +1,7 @@
 # name of who asks and what the qestion is
 name = "Gage"
 
-question = "Does Xue love me?"
+question = "Does my mom love me?"
 
 
 

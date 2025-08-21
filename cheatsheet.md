@@ -2,8 +2,11 @@
 
 - `cd` Change directory
 - `git` git good scrub
-- `module` a pre existiing code within python ex: import random
+
 # Terminology
+
+- `module` a pre existing code within python ex: import random
+
 
 ![files_icon](pictures\files_icon.PNG) - files
 

@@ -48,7 +48,7 @@ def vignere_decoder(key, code):
             msg.append(letter)
     return "".join(msg)
 
-def caeser_output():
+def caesar_output():
     user_response = input("Encode(1) or Decode(2) or Back(0): ").lower().strip()
     if user_response == "1" or user_response == "encode":
         print("Starting Encoding...")
@@ -63,7 +63,7 @@ def caeser_output():
     elif user_response == "0" or user_response == "back":
         output()
     else:
-        caeser_output()
+        caesar_output()
 
 def vignere_output():
     user_response = input("Encode(1) or Decode(2) or Back(0): ").lower().strip()
@@ -84,10 +84,10 @@ def vignere_output():
 
 def output():
     try:
-        print("\n\n***Welcome to my Caeser/Vignere Cipher encoding/decoding program!***")
-        user_response = input("\n\nChoose your cipher:\nCaeser(1) or Vignere(2): ").lower().strip()
-        if user_response == "1" or user_response == "caeser":
-            caeser_output()
+        print("\n\n***Welcome to my Caesar/Vignere Cipher encoding/decoding program!***")
+        user_response = input("\n\nChoose your cipher:\nCaesar(1) or Vignere(2): ").lower().strip()
+        if user_response == "1" or user_response == "caesar":
+            caesar_output()
         elif user_response == "2" or user_response == "vignere":
             vignere_output()
         else:

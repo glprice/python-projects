@@ -2,23 +2,21 @@ abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','
 
 def caesar_encoder(offset, code):
     msg = []
-    for word in code:
-        for letter in word:
-            if letter in abc:
-                msg.append(abc[(abc.index(letter) - offset) % 26])
-            else:
-                msg.append(letter)
+    for letter in code:
+        if letter in abc:
+            msg.append(abc[(abc.index(letter) - offset) % 26])
+        else:
+            msg.append(letter)
 
     return "".join(msg)
 
 def caesar_decoder(offset, code):
     msg = []
-    for word in code:
-        for letter in word:
-            if letter in abc:
-                msg.append(abc[(abc.index(letter) + offset) % 26])
-            else:
-                msg.append(letter)
+    for letter in code:
+        if letter in abc:
+            msg.append(abc[(abc.index(letter) + offset) % 26])
+        else:
+            msg.append(letter)
 
     return "".join(msg)
 

@@ -53,12 +53,12 @@ def caesar_output():
     if user_response == "1" or user_response == "encode":
         print("Starting Encoding...")
         offset = int(input("Enter offset: "))
-        code = input("Enter message: ")
+        code = input("Enter message: ").lower()
         print(caesar_encoder(offset, code))
     elif user_response == "2" or user_response == "decode":
         print("Starting Decoding...")
         offset = int(input("Enter offset: "))
-        code = input("Enter encoded message: ")
+        code = input("Enter encoded message: ").lower()
         print(caesar_decoder(offset, code))
     elif user_response == "0" or user_response == "back":
         output()
@@ -69,13 +69,13 @@ def vignere_output():
     user_response = input("Encode(1) or Decode(2) or Back(0): ").lower().strip()
     if user_response == "1" or user_response == "encode":
         print("Starting Encoding...")
-        key = input("Enter key: ")
-        code = input("Enter message: ")
+        key = input("Enter key: ").lower()
+        code = input("Enter message: ").lower()
         print(vignere_encoder(key, code))
     elif user_response == "2" or user_response == "decode":
         print("Starting Decoding...")
-        key = input("Enter Key: ")
-        code = input("Enter encoded message: ")
+        key = input("Enter Key: ").lower()
+        code = input("Enter encoded message: ").lower()
         print(vignere_decoder(key, code))
     elif user_response == "0" or user_response == "back":
         output()
@@ -99,8 +99,4 @@ def output():
     finally:
         output()
 output()
-
-
-
-
 

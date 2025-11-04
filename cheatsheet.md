@@ -30,8 +30,8 @@
 # Helpful Resources
 * [Markdown Cheatsheet](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 * [How to run Python on VS Code](https://code.visualstudio.com/docs/python/run#_run-python-code)
-    * <details>
+* <a href="https://code.visualstudio.com/docs/python/run#_native-repl">How to REPL in VS Code</a>
+    <details>
         <summary>Example</summary>
-        <img src="https://code.visualstudio.com/assets/docs/python/shared/nativeREPL-demo.gif" alt="How to run Python on VS Code">"
+          <img src = "https://code.visualstudio.com/assets/docs/python/shared/nativeREPL-demo.gif" alt="REPL"/>
     </details>
-  

@@ -1,8 +1,9 @@
 # importing modules
-from custom_module import generate_time_travel_message
 import datetime as dt
-from decimal import Decimal
 import random
+from decimal import Decimal
+
+from custom_module import generate_time_travel_message
 
 # code starts
 

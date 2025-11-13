@@ -5,3 +5,33 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+[dependency-groups]
+dev = [
+    "black>=25.11.0",
+    "ruff>=0.14.4",
+]
+
+# -------------------------------
+# Black Configuration
+# -------------------------------
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+skip-string-normalization = false
+
+# -------------------------------
+# Ruff Configuration
+# -------------------------------
+[tool.ruff]
+line-length = 88
+extend-select = ["I"]  # enable import sorting
+fix = true              # auto-fix on save
+
+# Ruff format can replace Black, but you're using Black, so disable:
+[tool.ruff.format]
+quote-style = "double"
+
+# Optional: ignore noisy rules
+[tool.ruff.lint]
+ignore = ["E501"]   # ignore line-length lint complaints (Black handles this)

@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+
+  // Black
+  "python.formatting.provider": "black",
+
+  // Ruff
+  "ruff.enable": true,
+  "ruff.lintOnSave": "on",
+  "ruff.fix": true,
+  "ruff.format": false
+}

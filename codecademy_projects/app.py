@@ -144,7 +144,7 @@ else:  # Vigenere
     key = st.text_input(
         "Enter key (letters only):",
         value="key",
-        help="Vigenère key; letters only, converted to lowercase.",
+        help="letters only, converted to lowercase.",
     )
 
     if st.button("Run Vigenère"):

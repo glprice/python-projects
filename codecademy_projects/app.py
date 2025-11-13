@@ -166,6 +166,3 @@ if result:
     st.code(result, language="text")
 else:
     st.write("Your output will appear here after you run the cipher.")
-
-
-st.caption("Built from your original CLI cipher script 💻➡️🌐")

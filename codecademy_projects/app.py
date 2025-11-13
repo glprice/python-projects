@@ -127,7 +127,7 @@ if cipher == "Caesar":
     offset_input = st.text_input(
         "Enter offset (integer):",
         value="3",
-        help="Positive integer; encoding uses -offset, decoding uses +offset (same as your original code).",
+        help="Positive integer",
     )
 
     if st.button("Run Caesar"):

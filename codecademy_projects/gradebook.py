@@ -1,9 +1,14 @@
-last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+last_semester_gradebook = [
+    ["politics", 80],
+    ["latin", 96],
+    ["dance", 97],
+    ["architecture", 65],
+]
 
-# Your code below: 
+# Your code below:
 
 # list of subjects taken and list of corresponing grades in order
-subjects = ["physics","calculus", "poetry", "history"]
+subjects = ["physics", "calculus", "poetry", "history"]
 grades = [98, 97, 85, 88]
 
 # combined list of "subjects" and "grades"
@@ -23,13 +28,13 @@ grades.append(93)
 gradebook.append(["visual arts", 93])
 
 # modifies grade of visual arts in "grades" and "gradebook"
-grades[-1]= 98
+grades[-1] = 98
 gradebook[-1][1] = 98
 
 # removes numerical grade from list and then replaces it using .remove and .append (as per instructions)
 gradebook[2].remove(85)
 gradebook[2].append("Pass")
 
-# combines" gradebook" and "last_semster_gradebook" into one list in order 
-full_gradebook = last_semester_gradebook + gradebook 
+# combines" gradebook" and "last_semster_gradebook" into one list in order
+full_gradebook = last_semester_gradebook + gradebook
 print("\n End of Year Results:\n" + str(full_gradebook))

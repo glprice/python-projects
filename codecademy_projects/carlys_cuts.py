@@ -1,4 +1,13 @@
-hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
+hairstyles = [
+    "bouffant",
+    "pixie",
+    "dreadlocks",
+    "crew",
+    "bowl",
+    "bob",
+    "mohawk",
+    "flattop",
+]
 
 prices = [30, 25, 40, 20, 20, 35, 50, 35]
 
@@ -10,21 +19,21 @@ total_price = 0
 
 # calculates the total price of every haircut
 for price in prices:
-  total_price += price
+    total_price += price
 
 # generates and prints rounded average using "total_price" and dividing by length of "prices"
 average_price = total_price / len(prices)
-print("Average Haircut Price:" , round(average_price, 2))
+print("Average Haircut Price:", round(average_price, 2))
 
 # generates new prices
-new_prices = [i-5 for i in prices]
+new_prices = [i - 5 for i in prices]
 print(new_prices)
 
 total_revenue = 0
 
 # multiplies each corresponding index of "prices" and "last_week" and adds them together
 for i in range(len(hairstyles)):
-  total_revenue += prices[i] * last_week[i]
+    total_revenue += prices[i] * last_week[i]
 
 print("Total Revenue:", total_revenue)
 
@@ -36,5 +45,3 @@ print("Average Daily Revenue:", round(average_daily_revenue, 2))
 cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)) if new_prices[i] < 30]
 
 print(cuts_under_30)
-
-

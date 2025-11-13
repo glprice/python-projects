@@ -1,4 +1,32 @@
-abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+abc = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+
 
 def caesar_encoder(offset, code):
     msg = []
@@ -11,6 +39,7 @@ def caesar_encoder(offset, code):
 
     return "".join(msg)
 
+
 def caesar_decoder(offset, code):
     msg = []
     for letter in code:
@@ -21,6 +50,7 @@ def caesar_decoder(offset, code):
             msg.append(letter)
 
     return "".join(msg)
+
 
 def vignere_encoder(key, code):
     offsets = [abc.index(i) for i in key]
@@ -36,6 +66,7 @@ def vignere_encoder(key, code):
             msg.append(letter)
     return "".join(msg)
 
+
 def vignere_decoder(key, code):
     offsets = [abc.index(i) for i in key]
     msg = []
@@ -49,6 +80,7 @@ def vignere_decoder(key, code):
         else:
             msg.append(letter)
     return "".join(msg)
+
 
 def caesar_output():
     user_response = input("Encode(1) or Decode(2) or Back(0): ").lower().strip()
@@ -67,6 +99,7 @@ def caesar_output():
     else:
         caesar_output()
 
+
 def vignere_output():
     user_response = input("Encode(1) or Decode(2) or Back(0): ").lower().strip()
     if user_response == "1" or user_response == "encode":
@@ -84,10 +117,15 @@ def vignere_output():
     else:
         vignere_output()
 
+
 def output():
     try:
-        print("\n\n***Welcome to my Caesar/Vignere Cipher encoding/decoding program!***")
-        user_response = input("\n\nChoose your cipher:\nCaesar(1) or Vignere(2): ").lower().strip()
+        print(
+            "\n\n***Welcome to my Caesar/Vignere Cipher encoding/decoding program!***"
+        )
+        user_response = (
+            input("\n\nChoose your cipher:\nCaesar(1) or Vignere(2): ").lower().strip()
+        )
         if user_response == "1" or user_response == "caesar":
             caesar_output()
         elif user_response == "2" or user_response == "vignere":
@@ -100,5 +138,6 @@ def output():
         print("you done goofed very bad. Try again... \n🔴ERROR MESSAGE:", e)
     finally:
         output()
-output()
 
+
+output()
